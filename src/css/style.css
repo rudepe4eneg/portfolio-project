@@ -40,6 +40,7 @@ nav {
     height: 640px;
     background: url(../img/01-Картинка-фона.jpg) center/cover no-repeat;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .section-about__block {
@@ -51,8 +52,8 @@ nav {
         rgba(234, 156, 65, 0.8) 100%
     );
     position: absolute;
-    top: 349px;
-    left: 730px;
+    top: 54%;
+    left: 50%;
     padding-top: 15px;
     text-align: center;
 }
@@ -62,7 +63,7 @@ nav {
     height: 160px;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 17px 0 0 24px;
+    padding: 17px 0 0 28px;
     text-align: left;
 }
 
@@ -75,4 +76,16 @@ nav {
 .section-about__text {
     font-size: 12px;
     margin: 0;
+}
+
+.section-description__icon-box {
+    text-align: center;
+}
+
+.section-description__icon-box img {
+    margin-right: 75px;
+}
+
+.section-description__icon-box img:last-child {
+    margin-right: 0px;
 }
