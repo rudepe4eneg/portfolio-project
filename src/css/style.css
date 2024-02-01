@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -12,20 +15,26 @@ header {
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     text-align: center;
     padding: 0;
 }
 
 li {
     display: inline;
-    margin: 100px;
+    margin-right: 100px;
+}
+
+li:last-child {
+    margin-right: 0px;
 }
 
 a {
     color: black;
     text-decoration: none;
     font-size: 18px;
+    font-family: 'Roboto', 'sans-serif';
+    margin-top: 50px;
 }
 
 a:hover {
@@ -36,9 +45,40 @@ nav {
     margin-bottom: 20px;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #999999;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 80px;
+}
+
+h1 {
+    font-family: 'Philosopher', 'sans-serif';
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    font-family: 'Philosopher', 'sans-serif';
+}
+
+p {
+    font-family: 'Roboto', 'sans-serif';
+}
+
 .section-about {
     height: 640px;
-    background: url(../img/01-Картинка-фона.jpg) center/cover no-repeat;
+    background: url(../img/01-Background-photo.jpg) center/cover no-repeat;
     position: relative;
     margin-bottom: 20px;
 }
@@ -63,7 +103,7 @@ nav {
     height: 160px;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 17px 0 0 28px;
+    padding: 17px 0 0 20px;
     text-align: left;
 }
 
@@ -78,8 +118,13 @@ nav {
     margin: 0;
 }
 
+.section-description {
+    margin-bottom: 20px;
+}
+
 .section-description__icon-box {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-description__icon-box img {
@@ -88,4 +133,31 @@ nav {
 
 .section-description__icon-box img:last-child {
     margin-right: 0px;
+}
+
+.section-description__title {
+    font-size: 96px;
+    margin: 0;
+    text-align: center;
+}
+
+.section-description__span {
+    color: #f15b40;
+}
+
+.section-description__text {
+    width: 1000px;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-map {
+    margin-bottom: 20px;
+}
+
+.section-map__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
 }
