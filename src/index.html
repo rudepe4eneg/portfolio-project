@@ -3,110 +3,309 @@
     <head>
         <meta charset="UTF-8" />
         <meta
-            http-equiv="X-UA-Compatible"
-            content="IE=edge" />
-        <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
-            href="css/reset.css" />
-        <link
-            rel="stylesheet"
-            href="css/normalize.css" />
-        <link
-            rel="stylesheet"
             href="css/style.css" />
-        <title>Магазин выпечки</title>
+        <script
+            src="https://kit.fontawesome.com/96149fc343.js"
+            crossorigin="anonymous"></script>
+        <title>Sass</title>
         <meta
             name="description"
-            content="Лучшая выпечка в городе" />
+            content="Веб-разработчик готовый к работе" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./icons/apple-touch-icon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./icons/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./icons/favicon-16x16.png" />
+        <link
+            rel="manifest"
+            href="./icons/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./icons/safari-pinned-tab.svg"
+            color="#5bbad5" />
+        <meta
+            name="msapplication-TileColor"
+            content="#da532c" />
+        <meta
+            name="theme-color"
+            content="#ffffff" />
     </head>
     <body>
-        <header>
-            <img
-                src="img/01-Logo.svg"
-                alt="Изображение логотипа" />
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">О НАС</a></li>
-                <li><a href="#">НОВОСТИ</a></li>
-                <li><a href="#">МЕНЮ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section class="section-about">
-                <div class="section-about__block">
-                    <div class="section-about__border">
-                        <h1 class="section-about__title">Специальный заказ</h1>
-                        <p class="section-about__text">
-                            Задача организации, в особенности же начало
-                            повседневной работы по формированию позиции требует
-                            определения и уточнения новых принципов формирования
-                            материально-технической и кадровой базы. Сложно
-                            сказать, почему стремящиеся вытеснить традиционное
-                            производство, нанотехнологии заблокированы в рамках
-                            своих собственных рациональных ограничений.
-                        </p>
+        <!-- First Section -->
+        <section class="main-section">
+            <!-- Navigation Menu -->
+            <div class="container main-section__nav-container">
+                <header class="main-section__header">
+                    <a href="#">
+                        <img
+                            src="./img/logo.png"
+                            alt="Logo"
+                            class="main-section__logo" />
+                    </a>
+                </header>
+                <nav class="main-section__nav nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a href="#skills">Навыки</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#about-me">Обо мне</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="container main-section__content-container">
+                <!-- Left Side of First Section -->
+                <div class="left-wrapper">
+                    <img
+                        src="./img/MyPhoto.png"
+                        alt=""
+                        class="left-wrapper" />
+                    <div class="left-wrapper__rectangle-blue"></div>
+                    <div class="left-wrapper__rectangle-orange"></div>
+                </div>
+                <!-- Right Side of First Section -->
+                <div class="right-wrapper">
+                    <!-- Icons -->
+                    <div class="right-wrapper__icon-box icons">
+                        <div class="icons__item">
+                            <i class="fa-brands fa-vk"></i>
+                        </div>
+                        <div class="icons__item">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div class="icons__item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="icons__item">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </div>
+                    <!-- Title -->
+                    <h1 class="right-wrapper__title title">
+                        Я Даня
+                        <hr class="title__hr" />
+                    </h1>
+                    <p class="right-wrapper__text">
+                        Начинающий веб-разработчик
+                    </p>
+                    <!-- Button -->
+                    <div class="right-wrapper__button buttons">
+                        <button class="buttons__main-btn">
+                            Написать<br />
+                            мне
+                        </button>
+                        <div class="right-wrapper__icon-btn buttons__icon-btn">
+                            <img
+                                src="./icons/ChatMe.png"
+                                alt="Chat" />
+                            <p class="buttons__text">
+                                Есть<br />
+                                вопросы?
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="section-description">
-                <div class="section-description__icon-box">
-                    <img
-                        src="./icons/01-Icon.svg"
-                        alt="01-Иконка" />
-                    <img
-                        src="./icons/02-Icon.svg"
-                        alt="02-Иконка" />
-                    <img
-                        src="./icons/03-Icon.svg"
-                        alt="03-Иконка" />
+                <div class="main-section__first-elipse elipse">
+                    <div class="elipse__substract"></div>
                 </div>
-                <div class="section-description__text-box">
-                    <h2 class="section-description__title">
-                        Выпечка -
-                        <span class="section-description__span">это</span>
-                        вкусно
+            </div>
+            <div class="main-section__second-elipse elipse elipse_big">
+                <div class="elipse__substract elipse__substract_big"></div>
+            </div>
+        </section>
+        <!-- Second Section -->
+        <section
+            id="skills"
+            class="second-section">
+            <div class="container second-section__container">
+                <!-- Header -->
+                <h2 class="second-section__title title">
+                    <hr class="title__hr" />
+                    Навыки
+                </h2>
+                <!-- Cards -->
+                <div class="second-section__cards-box">
+                    <div class="second-section__cards-item cards-item">
+                        <img
+                            src="./img/html-css-js.png"
+                            alt="Html-Css-Js"
+                            class="cards-item__img" />
+                        <p class="cards-item__text">Html-Css-Js</p>
+                    </div>
+                    <div
+                        class="second-section__cards-item cards-item card-orange">
+                        <img
+                            src="./img/react.png"
+                            alt="Html-Css-Js"
+                            class="cards-item__img" />
+                        <p class="cards-item__text">React</p>
+                    </div>
+                    <div
+                        class="second-section__cards-item cards-item card-blue">
+                        <img
+                            src="./img/git.png"
+                            alt="Html-Css-Js"
+                            class="cards-item__img" />
+                        <p class="cards-item__text">Git</p>
+                    </div>
+                </div>
+                <!-- Icons -->
+                <div class="second-section__icons-box">
+                    <div class="second-section__icons-item icons-item">
+                        <p class="icons-item__text">А также:</p>
+                        <img
+                            src="./img/typescript.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/cypress.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/npm.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/yarn.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/webpack.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/figma.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/github.png"
+                            alt=""
+                            class="icons-item__img" />
+                        <img
+                            src="./img/gitlab.png"
+                            alt=""
+                            class="icons-item__img" />
+                    </div>
+                </div>
+                <!-- Circles -->
+                <div class="second-section__first-elipse elipse">
+                    <div
+                        class="elipse__substract elipse__substract_white"></div>
+                </div>
+                <div class="second-section__second-elipse elipse">
+                    <div
+                        class="elipse__substract elipse__substract_white"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Third Section -->
+        <section
+            id="about-me"
+            class="third-section">
+            <div class="container third-section__container">
+                <!-- Header -->
+                <div class="third-section__header">
+                    <h2 class="header__title title">
+                        <hr class="title__hr" />
+                        Обо мне
                     </h2>
-                    <p class="section-description__text">
-                        Повседневная практика показывает, что дальнейшее
-                        развитие различных форм деятельности требуют от нас
-                        анализа новых предложений. Равным образом рамки и место
-                        обучения кадров позволяет оценить значение существенных
-                        финансовых и административных условий. Идейные
-                        соображения высшего порядка, а также укрепление и
-                        развитие структуры в значительной степени обуславливает
-                        создание модели развития. Таким образом новая модель
-                        организационной деятельности позволяет выполнять важные
-                        задания по разработке соотвествующий условий активизаци
+                </div>
+                <!-- About Me -->
+
+                <div class="third-section__text-about text-about">
+                    <p class="text-about__text">
+                        Мне 22 года, являюсь студентом МАИ. После двух лет
+                        обучения в вузе, всерьёз задумался попробовать себя в
+                        веб-разработке. Помимо самообучения прошел курс на
+                        платформе Skillbox по JavaScript. На данный момент есть
+                        собственные пет-проекты, которые вы можете посмотреть в
+                        моём профиле на GitHub
                     </p>
                 </div>
-            </section>
-            <section class="section-map">
-                <h3 class="section-map__title">ЗАКАЗАТЬ</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.4797754434335!2d37.51284892779192!3d55.80227073981771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549b511ca0953%3A0xa88670852cdc6113!2z0J_QtdC60LDRgNC90Y8g0KXQu9C10LHQvdCw0Y8g0LvQsNCy0LrQsA!5e0!3m2!1sru!2sru!4v1706722472562!5m2!1sru!2sru"
-                    width="900"
-                    height="400"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </main>
-        <hr />
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#">О НАС</a></li>
-                    <li><a href="#">НОВОСТИ</a></li>
-                    <li><a href="#">МЕНЮ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                </ul>
-            </nav>
+                <!-- Image -->
+                <img
+                    src="./img/diplom.png"
+                    alt=""
+                    class="third-section__diplom" />
+                <!-- Button and Logo -->
+                <div class="third-section__button-logo button-logo">
+                    <button class="button-logo__button">GitHub</button>
+                    <img
+                        src="./img/github.png"
+                        alt=""
+                        class="button-logo__logo" />
+                </div>
+                <!-- About Me 2 -->
+                <div class="third-section__text-personality text-personality">
+                    <ul class="text-personality__text">
+                        Личные качества:
+                        <li>Ответственность</li>
+                        <li>Внимательность</li>
+                        <li>Исполнительность</li>
+                        <li>Коммуникабельность</li>
+                        <li>Пунктуальность</li>
+                        <li>Целеустремленность</li>
+                    </ul>
+                </div>
+                <!-- Circles -->
+                <div class="third-section__first-elipse elipse">
+                    <div class="elipse__substract elipse"></div>
+                </div>
+                <div class="third-section__second-elipse elipse">
+                    <div class="elipse__substract elipse"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer 4 -->
+        <footer
+            id="contacts"
+            class="footer">
+            <div class="container footer__container">
+                <img
+                    src="./img/macbook.png"
+                    alt=""
+                    class="footer__img" />
+                <div class="footer__wrapper">
+                    <!-- Title -->
+                    <h5 class="footer__title title">
+                        <hr class="title__hr title__hr_top" />
+                        Контакты
+                    </h5>
+                    <!-- Icons -->
+                    <div class="footer__icon-box icons">
+                        <div class="icons__item">
+                            <i class="fa-brands fa-vk"></i>
+                        </div>
+                        <div class="icons__item">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div class="icons__item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="icons__item">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

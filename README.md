@@ -1,4 +1,4 @@
-# Bakery page
+# Portfolio page
 
--   A small page of a small bakery (https://rudepe4eneg.github.io/vypechka/)
--   HTML/CSS only
+-   My portfolio page
+-   HTML/CSS/SASS only
